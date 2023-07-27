@@ -1,0 +1,59 @@
+.card {
+    background-color: black !important;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 5rem  #e9ecef;
+    transform: scale(1.1);
+}
+
+.card:hover .card-text {
+    display: visible;
+}
+.card-text{
+    display: hidden;
+}
+
+/* Custom Card Styles */
+.custom-card {
+    width: 100%;
+}
+
+.custom-card-content {
+    width: 50%;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .custom-card-title {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .custom-card-quantity {
+    margin: 5px 0;
+  }
+  
+  /* Adjust the width and float of elements */
+  .custom-card-body > div {
+    width: 75%;
+    float: left;
+  }
+  
+  .custom-card-body > div:last-child {
+    width: 20%;
+    float: right;
+    text-align: right;
+  }
+  

@@ -1,0 +1,247 @@
+<html>
+    <head>
+        <title>CampusReads</title>
+        <link href="css/index.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/demo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <!--Main Navigation Start-->
+        <header>
+        
+            <!-- Background image Start -->
+            <div id="intro" class="bg-image"
+                style="
+                        background: url(images/hero.jpg) no-repeat center;
+                        height: 100vh;
+                        background-size: cover;
+                        ">
+                <div class="mask text-white" style="background-color: rgba(0, 0, 0, 0.4)">
+                    <div class="container d-flex align-items-center text-center h-100">
+                        <div>
+                            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="animated-heading">
+                                            <h1>Get Yourself a <span id="buywords">DC Pandey</span></h1>
+                                            <br><a href="php/explore.php"><input type="button" value="Start Buying" class="btn-main"></a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="animated-heading">
+                                            <h1>Sell Your old <span id="sellwords">DC Pandey</span></h1><br>
+                                            <a href="php/sell.php"><input type="button" value="Start Selling" class="btn-main"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background image End -->
+        </header>
+        <!-- Animated navbar Start-->
+        <nav class="navbar navbar-expand-sm fixed-top navbar-scroll">
+            <div class="container-fluid">
+                <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="d-flex justify-content-start align-items-center">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="navbar-brand fs-3 head" aria-current="page" href="">CampusReads</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav flex-row js-signin-modal-trigger">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="php/explore.php">Start Exploring</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="sticky-top hidden-spacer"> </div>
+        <!-- Animated navbar End -->
+        <!--Main Navigation End-->
+
+        <!--Content Start-->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="shadow imge" src="images/sell.jpg" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-5 mt-4">
+                        <h1 class="display-4">H1 Heading</h1>
+                        <p class="lead">Crow's nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+                        <a href="#" class="btn btn-outline-light">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="p-5 mt-4">
+                        <h1 class="display-4">H1 Heading</h1>
+                        <p class="lead">Crow's nest schooner ho scallywag hail-shot gabion salmagundi. Doubloon careen code of conduct lugsail hulk ye long clothes. </p>
+                        <a href="#" class="btn btn-outline-light">Read More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="shadow imge" src="images/buy.jpg" />
+                </div>
+            </div>
+        </div>
+        <!--Content End-->
+
+        <!-- footer section -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2023 CampusReads. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-inline text-end">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section -->
+
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" name="loginModal" style = 'background-color: #10111e !important;'>
+                    <div class="modal-header border-bottom-0">
+                    </div>
+                    <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Login</h4>
+                    </div><br>
+                    <div class="d-flex flex-column text-center">
+                        <form method="post" action="php/login.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control my-3" style = 'background-color: #10111e !important; color: aliceblue;' id="email1" name = "email" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control my-3" style = 'background-color: #10111e !important; color: aliceblue;' id="password1" name = "password" placeholder="Your password...">
+                            </div>
+                        <button type="submit" class="btn btn-info btn-block btn-round my-3">Login</button>
+                        </form>
+                        
+                        <div class="text-center text-muted delimiter">or use a social network</div><br>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div class="signup-section">Not a member yet? <a href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal" class="text-info">Sign Up</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signupModal" name="signupModal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style = 'background-color: #10111e !important;'>
+                    <div class="modal-header border-bottom-0">
+                    </div>
+                    <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h4>Sign-Up</h4>
+                    </div><br>
+                    <div class="d-flex flex-column text-center">
+                        <form method="post" action="php/signup.php">
+                            <div class="form-group">
+                                <input type="text" class="form-control my-3" style = 'background-color: #10111e !important; color: aliceblue;' id="username1" name = "username" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control my-3" style = 'background-color: #10111e !important; color: aliceblue;' id="email1" name = "email" placeholder="Your email address...">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control my-3" style = 'background-color: #10111e !important; color: aliceblue;' id="password1" name = "password" placeholder="Your password...">
+                            </div>
+                        <button type="submit" class="btn btn-info btn-block btn-round my-3">Sign Up</button>
+                        </form>
+                        
+                        <div class="text-center text-muted delimiter">or use a social network</div><br>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary btn-round mx-1" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <div class="signup-section">Already a member? <a href="" data-toggle="modal" data-target="#loginModal" data-dismiss="modal" class="text-info">Login</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            (function () {
+                var words = ["DC Pandey","HC Verma","Resnick Halliday","Cengage","RD Sharma","Irodov"],
+                i = 0;
+                setInterval(function(){ $('#buywords').fadeOut(function(){
+                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                }); }, 1000)
+                setInterval(function(){ $('#sellwords').fadeOut(function(){
+                    $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                }); }, 1000)
+
+                $('#carousel').carousel({
+                    interval: 3000, // Set the interval between slide transitions (in milliseconds)
+                    pause: "hover", // Pause the carousel on mouse hover
+                    ride: "carousel", // Enable automatic cycling of carousel items
+                });
+            })();
+        </script>
+        <script>
+            $(document).ready(function(){
+            $("#hidesu").click(function(){
+                $("#signupModal").hide(1000);
+            });
+            $("#hidel").click(function(){
+                $("#loginModal").hide(1000);
+            });
+        });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+        <script  src="js/script.js"></script>
+    </body>
+</html>

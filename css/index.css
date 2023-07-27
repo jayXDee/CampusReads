@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+    background-color: #10111e !important;
+    color: aliceblue !important;
+}
+
+.head {
+    font-family: 'Cinzel Decorative', cursive;
+    color: azure;
+    transition: all 0.5s;
+}
+
+.head:hover {
+    color: beige;
+}
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler .fa-bars {
+    color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler .fa-bars {
+    color: #4f4f4f;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.1em;
+    transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #ffacb7;
+}
+
+.carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+
+.animated-heading {
+    text-align: left;
+    display: block;
+    align-items: center;
+}
+
+span#buywords {
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+
+span#sellwords {
+    font-family: 'Poiret One', cursive;
+    font-weight: bolder;
+}
+
+.btn-main {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    border-width: 1px solid;
+    border-radius: 15px;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.8s;
+    margin: 0rem 1.2rem 1.5rem 1.5rem;
+}
+
+.btn-main:hover {
+    cursor: pointer;
+    font-weight: 500;
+    transform: scale(1.25);
+}
+
+.imge {
+    width: 70%;
+    margin-left: 10rem;
+}
+
+.hidden-spacer {
+    height: 56px;
+    background-color: #10111e !important;
+    color: aliceblue !important;
+}
+
+.footer_section {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.footer_section p {
+    color: #063547;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.footer_section p a {
+    color: inherit;
+}
